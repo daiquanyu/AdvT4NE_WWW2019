@@ -35,7 +35,7 @@ python main.py --input_net 'input/citeseer.mat' --dataset 'citeseer' --eps 1.1 -
 ```
 
 ## About Evaluation
-For node classification, we do not normalize the embedddings before evaluation.
+For node classification, we do not normalize the embeddings before evaluation.
 For link prediction, we normalize the embeddings before evaluation.
 
 ## Citation 
