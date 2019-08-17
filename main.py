@@ -310,12 +310,7 @@ def training(model, G, args, epoch_start, epoch_end, time_stamp):
 	evaluation.evaluate(model, sess, args, epoch_start)
 
 	###############################################################
-	# # adaptive l2 norm based on node similarities from PPMI matrix
-	# #----------------------------------------------------
-	# # # This is used for experiments in submission version
-	# A = sio.loadmat(args.input_net)['network']
-	# PPMI = (A + A*A + A*A*A + A*A*A*A)
-	# #----------------------------------------------------
+	# adaptive l2 norm based on node similarities from PPMI matrix
 	A = sio.loadmat(args.input_net)['network']
 	PPMI = utils.PPMI(A, k=2, flag=False)
 	###############################################################
