@@ -1,5 +1,5 @@
 
-# Adversarial Training Methods for Network Embedding.
+# Adversarial Training Methods for Network Embedding
 
 This is our implementation for the following paper:
 
