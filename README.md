@@ -10,23 +10,6 @@ Author: Quanyu Dai (quanyu.dai at connect.polyu.hk)
 ## Introduction
 We introduce a succinct and effective local regularization method, namely adversarial training, to network embedding so as to achieve model robustness and better generalization performance. Specifically, the adversarial training method is applied by defining adversarial perturbations in the embedding space with an adaptive L2 norm constraint that depends on the connectivity pattern of node pairs.
 
-## Citation 
-If you would like to use our code, please cite:
-```
-@inproceedings{AdvT4NE_WWW2019,
-  author    = {Quanyu Dai and
-               Xiao Shen and
-               Liang Zhang and
-               Qiang Li and
-               Dan Wang},
-  title     = {Adversarial Training Methods for Network Embedding},
-  booktitle = {The World Wide Web Conference, {WWW} 2019, San Francisco, CA, USA,
-               May 13-17, 2019},
-  pages     = {329--339},
-  year      = {2019}
-}
-```
-
 ## Environment Requirement
 The code has been tested running under Python 3.6.5. The required packages are as follows:
 * python == 3.6.5
@@ -54,3 +37,20 @@ python main.py --input_net 'input/citeseer.mat' --dataset 'citeseer' --eps 1.1 -
 ## About Evaluation
 For node classification, we do not normalize the embedddings before evaluation.
 For link prediction, we normalize the embeddings before evaluation.
+
+## Citation 
+If you would like to use our code, please cite:
+```
+@inproceedings{AdvT4NE_WWW2019,
+  author    = {Quanyu Dai and
+               Xiao Shen and
+               Liang Zhang and
+               Qiang Li and
+               Dan Wang},
+  title     = {Adversarial Training Methods for Network Embedding},
+  booktitle = {The World Wide Web Conference, {WWW} 2019, San Francisco, CA, USA,
+               May 13-17, 2019},
+  pages     = {329--339},
+  year      = {2019}
+}
+```
