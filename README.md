@@ -37,11 +37,6 @@ The code has been tested running under Python 3.6.5. The required packages are a
 
 ## Examples to Run the code with DeepWalk as Base Model
 The instruction of commands has been clearly stated in the code (see AdvT4NE/main.py).
-* Citeseer
-```
-python main.py --input_net 'input/citeseer.mat' --dataset 'citeseer' --eps 1.1 --reg_adv 1.0 --adv 'grad' --embed_size 128 --lr 0.001 --batch_size 1024 --nepoch 50 --resultTxt 'result/deepwalk-citeseer.txt' --rep 'output/citeseer-rep-deepwalk.mat' --pretraining_nepoch 2 --task mcc --normalized 0 --negative 1 --adapt_l2 1 --base 'deepwalk'
-```
-
 * Cora
 ```
 python main.py --input_net 'input/cora.mat' --dataset 'cora' --eps 0.9 --reg_adv 1.0 --adv 'grad' --embed_size 128 --lr 0.001 --batch_size 1024 --nepoch 50 --resultTxt 'result/deepwalk-cora.txt' --rep 'output/cora-rep-deepwalk.mat' --pretraining_nepoch 2 --task mcc --normalized 0 --negative 1 --adapt_l2 1  --base 'deepwalk'
@@ -50,6 +45,10 @@ python main.py --input_net 'input/cora.mat' --dataset 'cora' --eps 0.9 --reg_adv
 * Wiki
 ```
 python main.py --input_net 'input/wiki.mat' --dataset 'wiki' --eps 0.5 --reg_adv 1.0 --adv 'grad' --embed_size 128 --lr 0.001 --batch_size 1024 --nepoch 50 --resultTxt 'result/deepwalk-wiki.txt' --rep 'output/wiki-rep-deepwalk.mat' --pretraining_nepoch 2 --task mcc --normalized 0 --negative 1 --adapt_l2 1  --base 'deepwalk'
+```
+* Citeseer
+```
+python main.py --input_net 'input/citeseer.mat' --dataset 'citeseer' --eps 1.1 --reg_adv 1.0 --adv 'grad' --embed_size 128 --lr 0.001 --batch_size 1024 --nepoch 50 --resultTxt 'result/deepwalk-citeseer.txt' --rep 'output/citeseer-rep-deepwalk.mat' --pretraining_nepoch 2 --task mcc --normalized 0 --negative 1 --adapt_l2 1 --base 'deepwalk'
 ```
 
 ## About Evaluation
